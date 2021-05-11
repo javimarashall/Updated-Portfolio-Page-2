@@ -2,9 +2,14 @@ img {
     border-radius: 20px;
 }
 .card{
-    background-color: rgb(211, 79, 79);
+    background-color: rgb(3, 13, 68);
+    color: white;
 }
 body {
     background-image: url('./assets/code.jpeg');
     background-size: cover;
   }
+.card-body, .list-group-item{
+    background-color: rgb(3, 13, 68);
+    color: white;
+}
