@@ -4,3 +4,7 @@ img {
 .card{
     background-color: rgb(211, 79, 79);
 }
+body {
+    background-image: url('./assets/code.jpeg');
+    background-size: cover;
+  }
