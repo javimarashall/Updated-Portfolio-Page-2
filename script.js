@@ -4,8 +4,8 @@ $(document).ready(() => {
         {
             projectName: "Up For Beer Review",
             image: "./assets/brew.gif",
-            repoLink: "https://github.com/markkhoo/Trail-Scout/tree/data",
-            deployLink: "https://markkhoo.github.io/Trail-Scout/",
+            repoLink: "https://github.com/TMPeeler/Project-2",
+            deployLink: "https://upforbeerreview.herokuapp.com/",
             description: "Up for beer review is an interactive application where users can review existing beers or users can also create new beers and review them."
         },
 
@@ -20,7 +20,7 @@ $(document).ready(() => {
             projectName: "Note Taker",
             image: "./assets/note-taker.gif",
             repoLink: "https://github.com/javimarashall/Note-Taker",
-            deployLink: "https://javimarashall.github.io/Weather-Dashboard/",
+            deployLink: "https://peaceful-earth-70189.herokuapp.com/",
             description: "Note taker is an application where users are able enter notes, save, and delete notes"
         }, {
 
@@ -30,13 +30,7 @@ $(document).ready(() => {
             deployLink: "https://javimarashall.github.io/Password-Generator/",
             description: "This application is used to generate a random password using certain criterias. Upon loading of the application, the user starts it by pressing the 'generate password' button. Once the application is started, the user is prompted with a pop up windows asking the user how many characters to use. Next, the user is prompted with several questions asking if the user would like to use upper case letters, lower case letters, numbers or special characters. Depending on what the user selects as the criteria, that's what the application will use to generate the password.",
         },
-        {
-            projectName: "javier",
-            image: "./assets/me-again.gif",
-            repoLink: "https://github.com/javimarashall",
-            deployLink: "",
-            description: "I'm Javier Mondragon a full stack web developer looking for my next challenge!"
-        },
+       
     ];
     //call on event listener 
     $(".btn-block").on("click", (event) => {
