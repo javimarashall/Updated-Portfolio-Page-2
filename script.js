@@ -2,6 +2,14 @@ $(document).ready(() => {
 
     const projectData = [
         {
+            projectName: "Up For Beer Review",
+            image: "./assets/brew.gif",
+            repoLink: "https://github.com/markkhoo/Trail-Scout/tree/data",
+            deployLink: "https://markkhoo.github.io/Trail-Scout/",
+            description: ""
+        },
+        
+        {
             projectName: "Trail Scout",
             image: "./assets/images/trail-scout.png",
             repoLink: "https://github.com/markkhoo/Trail-Scout/tree/data",
@@ -9,7 +17,7 @@ $(document).ready(() => {
             description: ""
         },
         {
-            projectName: "Weather Dashboard",
+            projectName: "Note Taker",
             image: "./assets/images/weather-dashboard.png",
             repoLink: "",
             deployLink: "https://javimarashall.github.io/Weather-Dashboard/",
@@ -20,15 +28,15 @@ $(document).ready(() => {
             image: "./assets/.png",
             repoLink: "https://github.com/javimarashall/Password-Generator",
             deployLink: "https://javimarashall.github.io/Password-Generator/",
-            description: "This application is used to generate a random password using certain criterias. Upon loading of the application, the user starts it by pressing the "generate password" button. Once the application is started, the user is prompted with a pop up windows asking the user how many characters to use. Next, the user is prompted with several questions asking if the user would like to use upper case letters, lower case letters, numbers or special characters. Depending on what the user selects as the criteria, that's what the application will use to generate the password.",
+            description: "This application is used to generate a random password using certain criterias. Upon loading of the application, the user starts it by pressing the 'generate password' button. Once the application is started, the user is prompted with a pop up windows asking the user how many characters to use. Next, the user is prompted with several questions asking if the user would like to use upper case letters, lower case letters, numbers or special characters. Depending on what the user selects as the criteria, that's what the application will use to generate the password.",
         }
     ];
-//call on event listener 
+    //call on event listener 
     $(".btn-block").on("click", (event) => {
 
         var data = null;
         switch ($(event.target).text()) {
-            case "Trail Scout":
+            case "Up For Beer Review":
                 data = projectData[0];
                 break;
             case "Weather Dashboard":
@@ -42,17 +50,16 @@ $(document).ready(() => {
         }
 
         var template = `
-            <div>
-                <h2 class='text-center'>${data.projectName}</div>
-                <img class='img-fluid img-thumbnail' alt='responsive image' src="${data.image}"/>
-                <p>
-                <button type='button' class='btn btn-light'><a href="${data.repoLink}">GitHub Repository</a></button>
-                    </p>
-                <p>
-                <button type='button' class='btn btn-light'><a href="${data.deployLink}">Deployed URL</a></button>
-                    </p>
-                <p>${data.description}</p>
-            </div>
+        <img src="${data.image}" style="width: 725px; height: 450px" class="card-img" alt="...">
+
+        <div class="card-body">
+            <h5 class="card-title">${data.projectName}</h5>
+            <p class="card-text">${data.description}</p>
+            <li class="list-group-item">
+                <button type="" class="btn btn-primary">${data.deployLink}</button>
+                <button type="" class="btn btn-primary"><a href="${data.repoLink}">GitHub Repository</a></button>
+            </li>
+        </div>
             `;
 
         $(".template-insertion-zone").html(template);
@@ -60,3 +67,14 @@ $(document).ready(() => {
 
 
 });
+{/* <div>
+<h2 class='text-center'>${data.projectName}</div>
+<img class='img-fluid img-thumbnail' alt='responsive image' src="${data.image}"/>
+<p>
+<button type='button' class='btn btn-light'><a href="${data.repoLink}">GitHub Repository</a></button>
+    </p>
+<p>
+<button type='button' class='btn btn-light'><a href="${data.deployLink}">Deployed URL</a></button>
+    </p>
+<p>${data.description}</p>
+</div> */}
