@@ -8,24 +8,24 @@ $(document).ready(() => {
             deployLink: "https://markkhoo.github.io/Trail-Scout/",
             description: ""
         },
-        
+
         {
             projectName: "Trail Scout",
             image: "./assets/trail-scout.gif",
             repoLink: "https://github.com/markkhoo/Trail-Scout/tree/data",
             deployLink: "https://markkhoo.github.io/Trail-Scout/",
-            description: "Trail Scout is an interactive application that allows users to search for trails by city name. The application also returns weather information such as temperature, humidity, air quality, and weather icons for easy visualization.",
+            description: "Trail Scout is an interactive application where users can search for trails by city name and it also provides weather information for the trail."
         },
         {
             projectName: "Note Taker",
-            image: "./assets/images/weather-dashboard.png",
-            repoLink: "",
+            image: "./assets/note-taker.gif",
+            repoLink: "https://github.com/javimarashall/Note-Taker",
             deployLink: "https://javimarashall.github.io/Weather-Dashboard/",
-            description: ""
+            description: "Note taker is an application where users are able enter notes, save, and delete notes"
         }, {
 
             projectName: "Password Generator",
-            image: "./assets/.png",
+            image: "./assets/password.gif",
             repoLink: "https://github.com/javimarashall/Password-Generator",
             deployLink: "https://javimarashall.github.io/Password-Generator/",
             description: "This application is used to generate a random password using certain criterias. Upon loading of the application, the user starts it by pressing the 'generate password' button. Once the application is started, the user is prompted with a pop up windows asking the user how many characters to use. Next, the user is prompted with several questions asking if the user would like to use upper case letters, lower case letters, numbers or special characters. Depending on what the user selects as the criteria, that's what the application will use to generate the password.",
@@ -42,8 +42,11 @@ $(document).ready(() => {
             case "Trail Scout":
                 data = projectData[1];
                 break;
-            case "Password Generator":
+            case "Note Taker":
                 data = projectData[2];
+                break;
+            case "Password Generator":
+                data = projectData[3];
                 break;
             default:
                 break;
@@ -56,8 +59,8 @@ $(document).ready(() => {
             <h5 class="card-title">${data.projectName}</h5>
             <p class="card-text">${data.description}</p>
             <li class="list-group-item">
-                <button type="" class="btn btn-primary"><a href="${data.deployLink}"></a>Deploy Link</button>
-                <button type="" class="btn btn-primary"><a href="${data.repoLink}"></a>GitHub Repository</button>
+            <button type='button' class='btn btn-light'><a href="${data.deployLink}">Deployed URL</a></button>
+            <button type='button' class='btn btn-light'><a href="${data.repoLink}">GitHub Repository</a></button>  
             </li>
         </div>
             `;
