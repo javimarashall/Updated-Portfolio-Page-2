@@ -63,7 +63,7 @@ $(document).ready(() => {
         <img src="${data.image}" style="width: 725px; height: 450px" class="card-img" alt="...">
 
         <div class="card-body">
-            <h5 class="card-title">${data.projectName}</h5>
+            <h3 class="card-title text-center">${data.projectName}</h3>
             <p class="card-text">${data.description}</p>
             <li class="list-group-item">
             <button type='button' class='btn btn-light'><a href="${data.deployLink}">Deployed URL</a></button>
