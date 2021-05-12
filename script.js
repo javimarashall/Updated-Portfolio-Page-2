@@ -11,10 +11,10 @@ $(document).ready(() => {
         
         {
             projectName: "Trail Scout",
-            image: "./assets/images/trail-scout.png",
+            image: "./assets/trail-scout.gif",
             repoLink: "https://github.com/markkhoo/Trail-Scout/tree/data",
             deployLink: "https://markkhoo.github.io/Trail-Scout/",
-            description: ""
+            description: "Trail Scout is an interactive application that allows users to search for trails by city name. The application also returns weather information such as temperature, humidity, air quality, and weather icons for easy visualization.",
         },
         {
             projectName: "Note Taker",
@@ -39,7 +39,7 @@ $(document).ready(() => {
             case "Up For Beer Review":
                 data = projectData[0];
                 break;
-            case "Weather Dashboard":
+            case "Trail Scout":
                 data = projectData[1];
                 break;
             case "Password Generator":
@@ -56,8 +56,8 @@ $(document).ready(() => {
             <h5 class="card-title">${data.projectName}</h5>
             <p class="card-text">${data.description}</p>
             <li class="list-group-item">
-                <button type="" class="btn btn-primary">${data.deployLink}</button>
-                <button type="" class="btn btn-primary"><a href="${data.repoLink}">GitHub Repository</a></button>
+                <button type="" class="btn btn-primary"><a href="${data.deployLink}"></a>Deploy Link</button>
+                <button type="" class="btn btn-primary"><a href="${data.repoLink}"></a>GitHub Repository</button>
             </li>
         </div>
             `;
