@@ -30,6 +30,13 @@ $(document).ready(() => {
             deployLink: "https://javimarashall.github.io/Password-Generator/",
             description: "This application is used to generate a random password using certain criterias. Upon loading of the application, the user starts it by pressing the 'generate password' button. Once the application is started, the user is prompted with a pop up windows asking the user how many characters to use. Next, the user is prompted with several questions asking if the user would like to use upper case letters, lower case letters, numbers or special characters. Depending on what the user selects as the criteria, that's what the application will use to generate the password.",
         },
+        {
+            projectName: "Memory Game",
+            image: "./assets/site.gif",
+            repoLink: "https://github.com/javimarashall/Memory-Game",
+            deployLink: "",
+            description:"Memory Game is an interactive application that contains a memory game featuring beagle puppies in the cards."
+        }
        
     ];
     //call on event listener 
@@ -48,6 +55,9 @@ $(document).ready(() => {
                 break;
             case "Password Generator":
                 data = projectData[3];
+                break;
+            case "Memory Game":
+                data = projectData[4];
                 break;
             default: 
                 image = "./assets/me-again.gif"
