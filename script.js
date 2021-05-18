@@ -34,7 +34,7 @@ $(document).ready(() => {
             projectName: "Memory Game",
             image: "./assets/site.gif",
             repoLink: "https://github.com/javimarashall/Memory-Game",
-            deployLink: "",
+            deployLink: "https://javimarashall.github.io/Memory-Game/",
             description:"Memory Game is an interactive application that contains a memory game featuring beagle puppies in the cards."
         }
        
